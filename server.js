@@ -97,6 +97,7 @@ var SampleApp = function() {
         };
 
         self.routes['/api/ondeencontrar/categories'] = function(req, res) {
+            console.warn('Executou');
             core.dal.list('Categorias', req, res);
         };
     };
